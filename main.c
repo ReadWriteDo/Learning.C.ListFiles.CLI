@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include "printDirHandle.h"
 
-int main(){
-    char output[14] = "Hello, World!\n";
-    printf ("%s", output);
+int main(int argc, char *argv[]){
+    int argCount;
+
+    printf ("%s\n",printDir (argv[1]));
+    
     return 0;
 }
