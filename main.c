@@ -2,9 +2,10 @@
 #include "printDirHandle.h"
 
 int main(int argc, char *argv[]){
-    int argCount;
-
-    printf ("%s\n",printDir (argv[1]));
+    char *dir = argv[1];
+    
+    printf("%s\n",dir);
+    printDir (dir);
     
     return 0;
 }
